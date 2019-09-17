@@ -1,0 +1,29 @@
+<idea-plugin>
+    <id>com.github.sourcebucket.intellij_git_prepare_commit_msg</id>
+    <name>Git prepare commit message</name>
+    <version>0.1</version>
+    <vendor email="index.0h@gmail.com" url="http://github.com/sourcebucket">Roman Levishchenko</vendor>
+
+    <description><![CDATA[
+        Plugin generates commit message by git prepare-commit-msg hook, if it exists.
+    ]]></description>
+
+    <change-notes><![CDATA[
+      <p>1.0</p>
+      <ul>
+          <li>Initial release</li>
+      </ul>
+    ]]>
+    </change-notes>
+
+    <idea-version since-build="162"/>
+
+    <depends>com.intellij.modules.vcs</depends>
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <vcs.commitMessageProvider
+                implementation="com.github.sourcebucket.intellij_git_prepare_commit_msg.GitPrepareCommitMessageProvider"
+        />
+    </extensions>
+</idea-plugin>
