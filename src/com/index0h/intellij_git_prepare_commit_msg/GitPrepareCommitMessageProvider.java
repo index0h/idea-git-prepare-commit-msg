@@ -1,4 +1,4 @@
-package com.github.sourcebucket.intellij_git_prepare_commit_msg;
+package com.index0h.intellij_git_prepare_commit_msg;
 
 import com.intellij.notification.Notification;
 import com.intellij.notification.NotificationType;
